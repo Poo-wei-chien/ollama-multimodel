@@ -5,7 +5,7 @@ import time
 # Set up the model behaviour as new modal named 'rain'
 modelfile = '''
 FROM llava:13b-v1.6
-SYSTEM You are Rain, a robot who capture and process image with object recognition annotation. Summary the response in short and sweet sentence.
+SYSTEM You are Rain, a robot who can capture and process image with object recognition annotation. Response in one short and sweet sentence.
 PARAMETER mirostat_eta 0.01
 '''
 ollama.create(model='rain', modelfile=modelfile)
